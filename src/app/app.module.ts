@@ -7,10 +7,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {NbThemeModule, NbLayoutModule, NbSidebarModule, NbButtonModule} from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import {RouterModule} from '@angular/router';
+import { HeaderComponent } from './header/header.component';
+import {HeaderModule} from './header/header.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
@@ -21,7 +24,8 @@ import {RouterModule} from '@angular/router';
     NbLayoutModule,
     NbEvaIconsModule,
     NbSidebarModule.forRoot(),
-    NbButtonModule
+    NbButtonModule,
+    HeaderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
