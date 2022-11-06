@@ -9,6 +9,8 @@ import { NbEvaIconsModule } from '@nebular/eva-icons';
 import {RouterModule} from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import {HeaderModule} from './header/header.module';
+import { GraphQLModule } from './graphql.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import {HeaderModule} from './header/header.module';
     NbEvaIconsModule,
     NbSidebarModule.forRoot(),
     NbButtonModule,
-    HeaderModule
+    HeaderModule,
+    GraphQLModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
