@@ -2,6 +2,7 @@
 @import '~@nebular/theme/styles/themes/default';
 @import '~@nebular/theme/styles/themes/dark';
 @import '~@nebular/theme/styles/themes/cosmic';
+@import '~@nebular/theme/styles/themes/corporate';
 
 $nb-themes: nb-register-theme((
 
@@ -14,3 +15,7 @@ $nb-themes: nb-register-theme((
 $nb-themes: nb-register-theme((
 
 ), cosmic, cosmic);
+
+$nb-themes: nb-register-theme((
+
+), corporate, corporate);

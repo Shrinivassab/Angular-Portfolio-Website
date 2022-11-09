@@ -11,6 +11,7 @@ import { HeaderComponent } from './header/header.component';
 import {HeaderModule} from './header/header.module';
 import { GraphQLModule } from './graphql.module';
 import { HttpClientModule } from '@angular/common/http';
+import {PortfolioService} from './service/portfolio.service';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,7 @@ import { HttpClientModule } from '@angular/common/http';
     GraphQLModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [PortfolioService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

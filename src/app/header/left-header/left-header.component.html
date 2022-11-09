@@ -1,1 +1,18 @@
-<p>left-header works!</p>
+<ng-container *ngIf="headerData">
+  <div class="left-header-container">
+    <div class="logo-container">
+      <nb-icon matRipple icon="menu-outline"></nb-icon>
+      <p>{{headerData.headerName}}</p>
+    </div>
+    <div class="theme-select-container">
+      <nb-select placeholder="Select Showcase"
+                 (selectedChange)="changeThemeOnClick($event)"
+                 [(selected)]="selectedTheme">
+        <nb-option value="dark">Dark</nb-option>
+        <nb-option value="default">Default</nb-option>
+        <nb-option value="cosmic">Cosmic</nb-option>
+        <nb-option value="corporate">Corporate</nb-option>
+      </nb-select>
+    </div>
+  </div>
+</ng-container>
