@@ -1,19 +1,25 @@
+@use "src/themes" as *;
+
 .left-header-container {
   display: flex;
   align-items: center;
-  width: auto;
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+
+    nb-icon {
+      font-size: xx-large;
+      margin-right: 1.25rem;
+      border-right: 1px solid nb-theme(color-primary-600);
+    }
+
+  }
+
+  .theme-select-container {
+    display: flex;
+    align-items: center;
+  }
+
 }
 
-.logo-container {
-  display: flex;
-  align-items: center;
-}
-
-nb-icon {
-  font-size: xx-large;
-}
-
-.theme-select-container {
-  display: flex;
-  align-items: center;
-}

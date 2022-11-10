@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {LeftHeaderComponent} from './left-header/left-header.component';
 import { RightHeaderComponent } from './right-header/right-header.component';
-import {NbIconModule, NbSelectModule} from '@nebular/theme';
+import {NbIconModule, NbSelectModule, NbSidebarModule} from '@nebular/theme';
+import {MatRippleModule} from '@angular/material/core';
 
 
 
@@ -18,7 +19,9 @@ import {NbIconModule, NbSelectModule} from '@nebular/theme';
   imports: [
     CommonModule,
     NbIconModule,
-    NbSelectModule
+    NbSelectModule,
+    MatRippleModule,
+    NbSidebarModule
   ]
 })
 export class HeaderModule { }

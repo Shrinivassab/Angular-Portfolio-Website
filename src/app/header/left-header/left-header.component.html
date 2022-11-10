@@ -1,13 +1,13 @@
 <ng-container *ngIf="headerData">
   <div class="left-header-container">
     <div class="logo-container">
-      <nb-icon matRipple icon="menu-outline"></nb-icon>
-      <p>{{headerData.headerName}}</p>
+      <nb-icon icon="menu-outline" matRipple (click)="toggleCompact()"></nb-icon>
+      <div class="header-name">{{headerData.headerName}}</div>
     </div>
     <div class="theme-select-container">
-      <nb-select placeholder="Select Showcase"
-                 (selectedChange)="changeThemeOnClick($event)"
-                 [(selected)]="selectedTheme">
+      <nb-select (selectedChange)="changeThemeOnClick($event)"
+                 [(selected)]="selectedTheme"
+                 placeholder="Select Showcase">
         <nb-option value="dark">Dark</nb-option>
         <nb-option value="default">Default</nb-option>
         <nb-option value="cosmic">Cosmic</nb-option>
@@ -16,3 +16,4 @@
     </div>
   </div>
 </ng-container>
+

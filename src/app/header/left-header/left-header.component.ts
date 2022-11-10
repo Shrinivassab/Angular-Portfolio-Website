@@ -5,7 +5,7 @@ import {Apollo} from 'apollo-angular';
 import {GET_HEADER_DATA} from '../../service/graph.query';
 import {map} from 'rxjs/operators';
 import {EachHeaderData, HeaderData} from '../../service/portfolio.type';
-import {NbThemeService} from '@nebular/theme';
+import {NbSidebarService, NbThemeService} from '@nebular/theme';
 
 @Component({
   selector: 'app-left-header',
@@ -19,7 +19,8 @@ export class LeftHeaderComponent implements OnInit {
 
   constructor(private portfolioService: PortfolioService,
               private apollo: Apollo,
-              private themeService: NbThemeService) { }
+              private themeService: NbThemeService,
+              private sidebarService: NbSidebarService) { }
 
   ngOnInit(): void {
     this.getHeaderData()
@@ -38,6 +39,10 @@ export class LeftHeaderComponent implements OnInit {
 
   changeThemeOnClick(theme: string) {
     this.themeService.changeTheme(theme);
+  }
+
+  toggleCompact() {
+    this.sidebarService.toggle(true, 'right');
   }
 
 
