@@ -9,6 +9,8 @@ export class PortfolioService {
   constructor() {}
 
   extractHeaderData(data: unknown): EachHeaderData {
+    // @ts-ignore
+    console.log(data.headers[0])
     //TODO: Remove ignore
     // @ts-ignore
     return data.headers[0]
