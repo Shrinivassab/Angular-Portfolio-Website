@@ -11,7 +11,11 @@
     nb-icon {
       font-size: xx-large;
       margin-right: 1.25rem;
-      border-right: 1px solid nb-theme(color-primary-600);
+    }
+
+    .header-name {
+      font-size: x-large;
+      margin-right: 1.25rem;
     }
 
   }
@@ -20,6 +24,7 @@
     display: flex;
     align-items: center;
   }
+
 
 }
 

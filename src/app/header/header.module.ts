@@ -5,8 +5,6 @@ import { RightHeaderComponent } from './right-header/right-header.component';
 import {NbIconModule, NbSelectModule, NbSidebarModule} from '@nebular/theme';
 import {MatRippleModule} from '@angular/material/core';
 
-
-
 @NgModule({
   declarations: [
     LeftHeaderComponent,
