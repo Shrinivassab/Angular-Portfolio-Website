@@ -1,10 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {PortfolioService} from '../../service/portfolio.service';
-import {Observable} from 'rxjs';
 import {Apollo} from 'apollo-angular';
 import {GET_HEADER_DATA} from '../../service/graph.query';
-import {map} from 'rxjs/operators';
-import {EachHeaderData, HeaderData} from '../../service/portfolio.type';
+import {EachHeaderData} from '../../service/portfolio.type';
 import {NbSidebarService, NbThemeService} from '@nebular/theme';
 
 @Component({
